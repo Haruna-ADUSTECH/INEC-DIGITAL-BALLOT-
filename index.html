@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INEC Digital Ballot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container ballot-container">
+        <h1 class="title">INEC Digital Ballot</h1>
+        <input type="text" id="vin" class="form-control vin-input" placeholder="Enter your VIN">
+        <div class="party-list row">
+            <!-- Example party buttons with logos -->
+            <div class="col-4 party-item" onclick="vote('Party A')">
+                <img src="logos/partyA.png" alt="Party A Logo" class="party-logo">
+                <span class="party-name">Party A</span>
+            </div>
+          <div class="col-4 party-item" onclick="vote('Party B')">
+                <img src="logos/partyB.png" alt="Party B Logo" class="party-logo">
+                <span class="party-name">Party A</span>
+          </div>
+          <div class="col-4 party-item" onclick="vote('Party C')">
+                <img src="logos/partyC.png" alt="Party C Logo" class="party-logo">
+                <span class="party-name">Party A</span>
+            </div>
+            <!-- Repeat similar blocks for each party -->
+        </div>
+        <button class="btn btn-primary vote-btn" onclick="castVote()">Cast Vote</button>
+        <p id="resultMessage" class="result-message"></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
