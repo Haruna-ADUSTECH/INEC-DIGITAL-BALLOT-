@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.ballot-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+}
+
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.vin-input, .vote-btn {
+    margin-top: 10px;
+}
+
+.party-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.party-item {
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.party-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.party-item:hover {
+    transform: scale(1.1);
+}
+
+.result-message {
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
